@@ -11,10 +11,12 @@
 <body>
     <script>
         let tv = { 
-            size: 55, Brand: "Samsung", cost: 50000, Material: "Plastic" 
-            
+            size: 55, Brand: "Samsung", cost: 50000, Material: "Plastic" ,
+            fullname: function(){
+                return this.Brand + " oled " + this.size ;
+            }
         };
-        console.log(tv.Brand);
+        console.log(tv.fullname()); //syntax to 
     </script>
 </body>
 
